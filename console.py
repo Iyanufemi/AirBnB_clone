@@ -88,7 +88,7 @@ class HBNBCommand(cmd.Cmd):
                     return
             print("** no instance found **")
 
-            def do_destroy(self, arg):
+    def do_destroy(self, arg):
         """ Deletes an instance passed """
 
         if not arg:
@@ -175,5 +175,5 @@ class HBNBCommand(cmd.Cmd):
         return True
 
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
     HBNBCommand().cmdloop()
